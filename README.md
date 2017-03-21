@@ -1,13 +1,10 @@
-Tobii EyeX Software Development Kit for .NET
+Tobii Eye Tracking samples for .NET
 ============================================
 
-  This package contains everything a developer needs for building interactive _eye tracking_
-  enabled games and applications with the Tobii EyeX Engine API and the Microsoft .NET Framework.
-  
-  The SDK includes framework components, supporting both WPF and Windows Forms, 
-  that simplify the development of user interfaces with the EyeX interaction concepts. The 
-  framework components are provided in the form of open source code with a 
-  permissive license.
+  This repository contains samples to show developers how to use our API to build
+  interactive _eye tracking_ enabled games and applications on the Microsoft .NET Framework.
+
+  These samples are minimal samples designed to showcase the basic use cases.
 
   Note that Tobii offers several SDK packages targeted at different programming
   languages and frameworks, so be sure to pick the one that fits your needs best.
@@ -28,14 +25,13 @@ Tobii EyeX Software Development Kit for .NET
   in the revision history below.
 
 # Dependencies
-  https://www.nuget.org/packages/Tobii.EyeX.Client/ , version >= 1.8.503
+  https://www.nuget.org/packages/Tobii.EyeX.Client/ , version >= 1.8.503  
   https://www.nuget.org/packages/Tobii.EyeX.Framework/ , version >= 1.8.503
 
 # License
 
-  This sample code in this project is licensed under the MIT License - see the LICENSE file for details.
-  Samples requires Tobii propriaritary binares to access the eye tracker (available on nuget). These 
-  libraries are covered by a separate license agreement.
+  This sample source code in this project is licensed under the MIT License - see the LICENSE file for details.
+  Samples requires Tobii propriaritary binares to access the eye tracker (available on nuget). Note that these referenced libraries are covered by a [separate license agreement](https://developer.tobii.com/license-agreement/).
 
 # Revision history
 
@@ -167,23 +163,3 @@ Tobii EyeX Software Development Kit for .NET
   still in a pre-beta stage and the API has not been finalized yet. Backward 
   compatibility is not guaranteed, but we will do our best to keep the API 
   compatibility breaks to a minimum.
-
-# EYEX ENGINE API CHANGES
-
-2014-10-22, EyeX Engine 1.0
-- No actual API changes, but functional changes related to the Activatable 
-  behavior, direct click and key bindings: 
-  - If EyeX Interaction is disabled, no default keys are mapped to direct click.
-  - ActivationFocus and Activated events are sent simultaneously if EyeX Button 
-    interaction is configured in EyeX Interaction settings.
-
-2014-09-05, EyeX Engine Developer Preview 0.10.0
-- Name changes:
-  * InteractionSystem => Environment  
-  * InteractionSnapshot => Snapshot  
-  * InteractionQuery => Query  
-  * InteractionBehaviorType => BehaviorType  
-  * InteractionContext => Context  
-  * InteractionBoundsType => BoundsType  
-  * PresenceData => UserPresence  
-  * Interactor.Set[X]Behavior => Interactor.Create[X]Behavior  
